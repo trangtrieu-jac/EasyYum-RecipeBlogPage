@@ -1,0 +1,35 @@
+.hero-section {
+  padding-top: 2rem;
+  padding: $padding-base;
+  text-align: center;
+
+  .burger {
+    margin: 5rem 0;
+
+    img {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.burger-video {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;   
+  z-index: 999; 
+  border: 2px solid #ccc;
+  border-radius: $border-radius;
+  
+  video {
+    width: 300px;
+    height: 170px;
+    border: none;
+    border-radius: $border-radius; 
+  }
+}
+
+@media print {
+  .floating-video, .navbar, video {
+      display: none;
+  }
+}

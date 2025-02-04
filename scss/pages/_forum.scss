@@ -1,0 +1,32 @@
+.forum {
+  .forum-title {
+    text-align: center;
+    padding-top: $padding-base;
+  }
+
+  .row {
+    row-gap: 1rem;
+  }
+}
+
+.newsletter-box {
+  text-align: center;
+  padding-top: $padding-base;
+  margin-top: 3rem;
+  border-top: 1px solid $primary-color;
+  justify-content: center;
+
+  form {
+    @include center-flex;
+    gap: 10px;
+    margin-bottom: $margin-base;
+
+    .form-control {
+      max-width: 300px;
+      flex-grow: 1;
+    }
+  }
+  button {
+    @include buttons;
+  }
+}

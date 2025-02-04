@@ -1,0 +1,276 @@
+body {
+  font-family: "Mada", sans-serif;
+  background-color: #F3E8E8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+body h2, body h3, body h5 {
+  font-family: "Mada", sans-serif;
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+body a:hover {
+  color: #C25757;
+}
+
+.navbar .navbar-brand img {
+  height: 40px;
+}
+.navbar .nav-link {
+  color: #000;
+  margin-right: 1rem;
+}
+.navbar .nav-link:hover {
+  color: #C25757;
+  text-decoration: underline;
+}
+.navbar form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.navbar .form-control {
+  height: 40px;
+  padding: 0.5rem 1rem;
+}
+.navbar button {
+  height: 35px;
+  background-color: #C25757;
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.navbar button:hover {
+  background-color: #e2c6c6;
+}
+
+footer {
+  display: block;
+  bottom: 0;
+  width: 100%;
+  background-color: #EFBEBE;
+  color: #333;
+  padding: 1rem 0;
+}
+footer .social-media img {
+  height: 40px;
+}
+footer .social-media .social-icons img {
+  margin-right: 1rem;
+}
+footer .social-media .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.carousel {
+  text-align: center;
+}
+
+.carousel-inner {
+  height: 90vh;
+}
+.carousel-inner .carousel-item {
+  height: 90vh;
+}
+.carousel-inner .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-inner .carousel-item img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.popular-dishes {
+  height: 70vh;
+  margin-bottom: 1rem;
+}
+.popular-dishes .card-img-top {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular-dishes .card-body {
+  padding: 0.5rem;
+  height: 80px;
+}
+.popular-dishes h2 {
+  padding-top: 1rem;
+  text-align: center;
+}
+.popular-dishes p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.popular-dishes p:hover {
+  color: #C25757;
+  font-weight: bold;
+  size: 2rem;
+}
+
+.recipes {
+  padding-bottom: 5rem;
+}
+.recipes .recipe-title {
+  text-align: center;
+  padding: 2rem 0;
+}
+.recipes .idea img {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+}
+.recipes .idea h4 {
+  margin-left: 2rem;
+}
+
+.dietary img {
+  width: 50vh;
+  height: 20vh;
+}
+.dietary .dietary-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.dietary .dietary-text {
+  margin: 0 1rem;
+}
+
+.forum .forum-title {
+  text-align: center;
+  padding-top: 1rem;
+}
+.forum .row {
+  row-gap: 1rem;
+}
+
+.newsletter-box {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #C25757;
+  justify-content: center;
+}
+.newsletter-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.newsletter-box form .form-control {
+  max-width: 300px;
+  flex-grow: 1;
+}
+.newsletter-box button {
+  height: 35px;
+  background-color: #C25757;
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.newsletter-box button:hover {
+  background-color: #e2c6c6;
+}
+
+.contact {
+  display: block;
+}
+.contact .row {
+  align-items: center;
+}
+.contact .row h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact .contact-box {
+  background-color: #F3E8E8;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+.contact .contact-box .form-label {
+  font-weight: bold;
+}
+.contact .contact-box .form-control {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.contact .contact-box button {
+  height: 35px;
+  background-color: #C25757;
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 0;
+}
+.contact .contact-box button:hover {
+  background-color: #e2c6c6;
+}
+.contact .app {
+  display: block;
+  text-align: center;
+}
+.contact .app .app-info img {
+  height: 70px;
+  width: 200px;
+}
+
+.hero-section {
+  padding-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.hero-section .burger {
+  margin: 5rem 0;
+}
+.hero-section .burger img {
+  border-radius: 5px;
+}
+
+.burger-video {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.burger-video video {
+  width: 300px;
+  height: 170px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media print {
+  .floating-video, .navbar, video {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

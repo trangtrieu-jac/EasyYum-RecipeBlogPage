@@ -1,0 +1,47 @@
+// Contact
+.contact {
+  display: block;
+
+  .row {
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      margin-bottom: $margin-base;
+    }
+  }
+  
+
+  .contact-box {
+    background-color: $background-color;
+    padding: 2rem;
+    border-radius: $border-radius;
+    margin-bottom: 4rem;
+
+    .form-label {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: $border-radius;
+      margin-bottom: $margin-base;
+    }
+
+    button {
+      @include buttons;
+      margin: 0;
+    }
+  }
+
+// App
+.app {
+  display: block;
+  text-align: center;
+
+  .app-info {
+    img {
+      height: 70px;
+      width: 200px;
+    }
+    }
+  }
+}

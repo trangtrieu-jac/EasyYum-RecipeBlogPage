@@ -1,0 +1,62 @@
+// Navbar 
+.navbar {
+
+  .navbar-brand {
+    img {
+      height: 40px;
+    }
+  }
+
+  .nav-link {
+    color: $link-color;
+    margin-right: $margin-base;
+
+    &:hover {                                    
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+  }
+  
+  .form-control {
+    height: 40px; 
+    padding: 0.5rem $padding-base;
+  }
+
+  button {
+    @include buttons;
+  }
+}
+
+
+
+
+// Footer
+footer {
+  display: block;
+  bottom: 0;
+  width: 100%;
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: $padding-base 0;
+
+
+  .social-media {
+    img {
+      height: 40px;
+    }
+    .social-icons {
+      img {
+        margin-right: $margin-base;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
