@@ -76,51 +76,58 @@
       </div>
     </nav>
 
-    <main>
-      <!-- Contact Page -->
-      <div class="contact container" aria-labelledby="contact-form">
+    <main role="main">
+      <!-- Page de contact -->
+      <div class="contact container" aria-label="formulaire-de-contact">
         <div class="row">
-          <!-- Contact Box -->
+          <!-- Boîte de contact -->
           <div class="col-md-5">
-            <div class="contact-box" role="form" aria-labelledby="contact-form-title">
+            <div class="contact-box" role="form">
               <h2>Contactez-nous</h2>
-              <form action="#" method="post">
+              <form id="contact-form" action="#" method="post" aria-labelledby="Formulaire de contact">
                 <div>
-                  <label for="first-name" class="flabel" aria-label="Prénom">Prénom</label>
-                  <input type="text" id="first-name" name="first-name" class="fcontrol" aria-label="Entrez votre prénom" required>
+                  <label for="firstName" class="flabel" aria-label="Prénom">Prénom</label>
+                  <input type="text" id="firstName" name="firstName" class="fcontrol" aria-label="Veuillez entrer votre prénom" required>
+                  <span class="error-message" id="nameError"></span>
                 </div>
-
+    
                 <div>
                   <label for="surname" class="flabel" aria-label="Nom de famille">Nom de famille</label>
-                  <input type="text" id="surname" name="surname" class="fcontrol" aria-label="Entrez votre nom de famille" required>
+                  <input type="text" id="surname" name="surname" class="fcontrol" aria-label="Veuillez entrer votre nom de famille" required>
+                  <span class="error-message" id="surnameError"></span>
                 </div>
-
+    
                 <div>
                   <label for="email" class="flabel" aria-label="Courriel">Courriel</label>
-                  <input type="email" id="email" name="email" class="fcontrol" placeholder="vous@email.com" aria-label="Entrez votre courriel" required>
+                  <input type="email" id="email" name="email" class="fcontrol" placeholder="vous@email.com" aria-label="Veuillez entrer votre courriel" required>
+                  <span class="error-message" id="emailError"></span>
                 </div>
-
+    
                 <div>
                   <label for="message" class="flabel" aria-label="Message">Message</label>
-                  <textarea id="message" name="message" class="fcontrol" placeholder="Votre message..." rows="4" aria-label="Entrez votre message" required></textarea>
+                  <textarea id="message" name="message" class="fcontrol" placeholder="Votre message..." rows="4" aria-label="Veuillez entrer votre message" required></textarea>
+                  <span class="error-message" id="messageError"></span>
                 </div>
-
-                <button type="submit" aria-label="Soumettre le formulaire">Soumettre</button>
+    
+                <button type="submit" aria-label="Soumettre le message">Soumettre</button>
               </form>
+    
+              <!-- Message de succès -->
+              <div id="successMessage" class="success-message" aria-live="polite"></div>
             </div>
           </div>
-
-          <!-- App Image -->
+    
+          <!-- Image de l'application -->
           <div class="app col-md-4" aria-label="Application mobile">
-            <img src="/assets/images/app.png" alt="Description de l'image" class="img-fluid" aria-hidden="true">
+            <img src="/assets/images/app.png" alt="Capture d'écran de l'application Easy Yum" class="img-fluid" aria-hidden="true">
           </div>
-
-          <!-- App Info -->
+    
+          <!-- Infos sur l'application -->
           <div class="app col-md-3">
             <div class="app">
-              <h3>Obtenez notre application</h3>
-              <h5>Elle est maintenant disponible sur l&apos;App Store et le Play Store. Vous pouvez la télécharger gratuitement !</h5>
-
+              <h3>Téléchargez notre application</h3>
+              <h5>Elle est maintenant disponible sur l'App Store et le Play Store. Téléchargez-la gratuitement!</h5>
+    
               <div>
                 <a href="#app-store" aria-label="Télécharger sur l'App Store">
                   <img src="/assets/images/app-store.png" height="100" width="200" alt="App Store" class="img-fluid">
