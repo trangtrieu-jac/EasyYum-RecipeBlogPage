@@ -17,8 +17,7 @@
   bottom: 20px; 
   right: 20px;   
   z-index: 999; 
-  border: 2px solid #ccc;
-  border-radius: $border-radius;
+  @include borders;
   
   video {
     width: 300px;

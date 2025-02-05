@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Blogue de recettes délicieux</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Menu de navigation principal">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.fr.html">
+        <a class="navbar-brand" href="/Home.fr.html" aria-label="Page d'accueil">
           <img src="/image/logo-transparent-background.png" alt="Logo Easy Yum">
         </a>
         <button
@@ -50,33 +51,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.fr.html">Accueil</a>
+              <a class="nav-link" href="/Home.fr.html" aria-label="Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.fr.html">Recettes</a>
+              <a class="nav-link" href="/Recipes.fr.html" aria-label="Recettes">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.fr.html">Forum</a>
+              <a class="nav-link active" aria-current="page" href="/Forum.fr.html" aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.fr.html">Contact</a>
+              <a class="nav-link" href="/Contact.fr.html" aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.html">EN</a>
+              <a class="nav-link" href="/Forum.html" aria-label="Page de forum en anglais">EN</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Rechercher sur le site">
             <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher">
           </form>
-          <button type="submit">Se connecter</button>
-          <button type="submit">S&apos;inscrire</button>
+          <button type="submit" aria-label="Se connecter">Se connecter</button>
+          <button type="submit" aria-label="S'inscrire">S&apos;inscrire</button>
         </div>
       </div>
     </nav>
 
     <main>
       <!-- Forum -->
-      <div class="forum container">
+      <div class="forum container" aria-labelledby="forum-title">
         <div class="forum-title">
           <h2>Forum</h2>
           <h5>111 111 utilisateurs, 22 222 recettes, 3 333 333 photos</h5>
@@ -84,33 +85,33 @@
 
         <div class="row">
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 1">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 1" aria-label="Image de critique 1">
           </div>
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 2">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 2" aria-label="Image de critique 2">
           </div>
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 3">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 3" aria-label="Image de critique 3">
           </div>
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 4">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 4" aria-label="Image de critique 4">
           </div>
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 5">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 5" aria-label="Image de critique 5">
           </div>
           <div class="col-md-4">
-            <img src="/image/review.png" class="img-fluid" alt="Critique 6">
+            <img src="/image/review.png" class="img-fluid" alt="Critique 6" aria-label="Image de critique 6">
           </div>
         </div>
       </div>
     
       <!-- Newsletter -->
-      <div class="newsletter-box container">
+      <div class="newsletter-box container" aria-labelledby="bulletin-title">
         <h3>Suivez les dernières tendances</h3>
         <p>Avec notre bulletin hebdomadaire</p>
-        <form action="#" method="post">
-          <input type="email" placeholder="vous@example.com" required class="form-control">
-          <button type="submit">Soumettre</button>
+        <form action="#" method="post" aria-label="S'abonner à la bulletin">
+          <input type="email" placeholder="vous@example.com" required class="form-control" aria-label="Entrez votre courriel">
+          <button type="submit" aria-label="Soumettre l'abonnement à la bulletin">Soumettre</button>
         </form>
       </div>
     </main>

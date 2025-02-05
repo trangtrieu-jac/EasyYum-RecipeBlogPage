@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Delicious Recipe Blog</title>
   </head>
 
   <body>
     <!-- Navbar from Bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.html">
+        <a class="navbar-brand" href="/Home.html" aria-label="Home page">
           <img src="/image/logo-transparent-background.png" alt="Easy Yum Logo">
         </a>
         <button
@@ -50,49 +51,49 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="/Home.html" aria-label="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.html">Recipes</a>
+              <a class="nav-link" href="/Recipes.html"aria-label="Recipes">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.html">Forum</a>
+              <a class="nav-link" href="/Forum.html"aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.html">Contact</a>
+              <a class="nav-link" href="/Contact.html"aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Home.fr.html">FR</a>
+              <a class="nav-link" href="/Home.fr.html" aria-label="Home french version">FR</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Search form">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           </form>
-          <button type="submit">Log In</button>
-          <button type="submit">Register</button>
+          <button type="submit" aria-label="Log In">Log In</button>
+          <button type="submit" aria-label="Register">Register</button>
         </div>
       </div>
     </nav>
 
     <main>
       <!-- Carousel from Bootstrap -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" aria-label="Image carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" role="group" aria-label="First slide">
             <img src="/image/Christmas.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Easy and Delicious Meal</h3>
               <p>Discover your easy yet yummy recipes</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="group" aria-label="Second slide">
             <img src="/image/new-year.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>A Fresh Start</h3>
               <p>Delicious Recipes to Ring in the New Year!</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="group" aria-label="Third slide">
             <img src="/image/Valentine.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Love on a Plate</h3>
@@ -100,24 +101,24 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" aria-label="Previous slide">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" aria-label="Next slide">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden"></span>
         </button>
       </div>
 
       <!-- Most Popular Dishes-->
-      <div class="popular-dishes container">
+      <div class="popular-dishes container" aria-labelledby="popular-dishes-title">
         <h2>Most Popular Dishes</h2>
         <div class="row">
 
           <!-- Popular 1 -->
-          <div class="card col-sm-4">
-            <a href="#">
+          <div class="card col-sm-4" role="region" aria-labelledby="popular1-title">
+            <a href="#" aria-describedby="popular1-description">
               <img class="card-img-top" src="/image/popular1.jpg" alt="Spaghetti Seafood">
               <div class="card-body">
                 <p class="card-text">Spaghetti Seafood</p>
@@ -126,8 +127,8 @@
           </div>
 
           <!-- Popular 2-->
-          <div class="card col-sm-4">
-            <a href="#">
+          <div class="card col-sm-4" role="region" aria-labelledby="popular2-title">
+            <a href="#" aria-describedby="popular2-description">
               <img class="card-img-top" src="/image/popular2.jpg" alt="Avocado Toast">
               <div class="card-body">
                 <p class="card-text">Avocado Toast</p>
@@ -136,8 +137,8 @@
           </div>
 
           <!-- Popular 3 -->
-          <div class="card col-sm-4">
-            <a href="#">
+          <div class="card col-sm-4" role="region" aria-labelledby="popular3-title">
+            <a href="#" aria-describedby="popular3-description">
               <img class="card-img-top" src="/image/popular3.jpg" alt="Chocolate Lava Cake">
               <div class="card-body">
                 <p class="card-text">Chocolate Lava Cake</p>

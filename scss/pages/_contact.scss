@@ -22,8 +22,9 @@
       font-weight: bold;
     }
     .form-control {
-      border-radius: $border-radius;
+      @include borders;
       margin-bottom: $margin-base;
+      
     }
 
     button {

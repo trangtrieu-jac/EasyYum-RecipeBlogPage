@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Delicious Recipe Blog</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.html">
+        <a class="navbar-brand" href="/Home.html" aria-label="Home page">
           <img src="/image/logo-transparent-background.png" alt="Easy Yum Logo">
         </a>
         <button
@@ -50,26 +51,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.html">Home</a>
+              <a class="nav-link" href="/Home.html" aria-label="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.html">Recipes</a>
+              <a class="nav-link active" aria-current="page" href="/Recipes.html"aria-label="Recipes">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.html">Forum</a>
+              <a class="nav-link" href="/Forum.html"aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.html">Contact</a>
+              <a class="nav-link" href="/Contact.html"aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.fr.html">FR</a>
+              <a class="nav-link" href="/Recipes.fr.html" aria-label="Recipes french version">FR</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Search form">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           </form>
-          <button type="submit">Log In</button>
-          <button type="submit">Register</button>
+          <button type="submit" aria-label="Log In">Log In</button>
+          <button type="submit" aria-label="Register">Register</button>
         </div>
       </div>
     </nav>
@@ -83,49 +84,49 @@
         <!-- Breakfast -->
         <div class="container">
           <div class="row">
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="breakfast-link">
               <a href="#breakfast">
-                <img src="/image/breakfast.jpg" alt="Breakfast">
+                <img src="/image/breakfast.jpg" alt="Breakfast" aria-label="Breakfast">
                 <h4>Breakfast</h4>
               </a>
             </div>
 
             <!-- Lunch -->
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="lunch-link">
               <a href="#lunch">
-                <img src="/image/lunch.jpg" alt="Lunch">
+                <img src="/image/lunch.jpg" alt="Lunch" aria-label="Lunch">
                 <h4>Lunch</h4>
               </a>
             </div>
 
             <!-- Dinner -->
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="dinner-link">
               <a href="#dinner">
-                <img src="/image/dinner.jpg" alt="Dinner">
+                <img src="/image/dinner.jpg" alt="Dinner" aria-label="Dinner">
                 <h4>Dinner</h4>
               </a>
             </div>
 
             <!-- Dessert -->
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="dessert-link">
               <a href="#dessert">
-                <img src="/image/dessert.jpg" alt="Dessert">
+                <img src="/image/dessert.jpg" alt="Dessert" aria-label="Dessert">
                 <h4>Dessert</h4>
               </a>
             </div>
 
             <!-- Snacks -->
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="snack-link">
               <a href="#snacks">
-                <img src="/image/snack.jpg" alt="Snacks">
+                <img src="/image/snack.jpg" alt="Snacks" aria-label="Snacks">
                 <h4>Snack</h4>
               </a>
             </div>
 
             <!-- Beverage -->
-            <div class="idea col-sm-2">
+            <div class="idea col-sm-2" aria-labelledby="beverage-link">
               <a href="#/beverage">
-                <img src="/image/beverage.jpg" alt="Beverage">
+                <img src="/image/beverage.jpg" alt="Beverage" aria-label="Beverage">
                 <h4>Beverage</h4>
               </a>
             </div>
@@ -137,10 +138,10 @@
       <div class="latest container">
         <div class="row">
           <!-- Latest Recipe Section -->
-          <div class="latest col-md-6">
+          <div class="latest col-md-6" aria-labelledby="latest-recipe">
             <h2>Latest Recipe</h2>
             <a href="/Recipes/burger.html">
-              <img src="/image/latest.jpg" alt="Burger the Burglar" class="img-fluid">
+              <img src="/image/latest.jpg" alt="Burger the Burglar" class="img-fluid" aria-label="Burger the Burglar">
             </a>
             <div class="latest-info">
               <h3>Burger the "Burglar"</h3>
@@ -154,13 +155,13 @@
           </div>
 
           <!-- Dietary Preferences Section -->
-          <div class="dietary col-md-6">
+          <div class="dietary col-md-6" aria-labelledby="dietary-preferences">
             <h2>Dietary Preferences</h2>
             <div class="dietary-list">
               <!-- Veggie Life-->
-              <div class="dietary-category">
+              <div class="dietary-category" aria-labelledby="veggie-link">
                 <a href="#veggielife">
-                  <img src="/image/veggie-life.jpg" alt="Veggie Life"class="img-fluid">
+                  <img src="/image/veggie-life.jpg" alt="Veggie Life"class="img-fluid" aria-label="Veggie Life">
                 </a>
                 <div class="dietary-text">
                   <h5>Veggie Life</h5>
@@ -171,9 +172,9 @@
               </div>
 
               <!-- Keto -->
-              <div class="dietary-category">
+              <div class="dietary-category" aria-labelledby="keto-link">
                 <a href="#ketodiet">
-                  <img src="/image/keto.jpg" alt="Keto Diet" class="img-fluid">
+                  <img src="/image/keto.jpg" alt="Keto Diet" class="img-fluid" aria-label="Keto Diet">
                 </a>
                 <div class="dietary-text">
                   <h5>Let's Keto!</h5>
@@ -184,9 +185,9 @@
               </div>
 
               <!-- Mediterranean Diet -->
-              <div class="dietary-category">
-                <a href="#ketodiet">
-                  <img src="/image/mediterranean.jpg" alt="Keto Diet" class="img-fluid">
+              <div class="dietary-category" aria-labelledby="mediterranean-link">
+                <a href="#medidiet">
+                  <img src="/image/mediterranean.jpg" alt="Mediterranean Diet" class="img-fluid" aria-label="Mediterranean Diet">
                 </a>
                 <div class="dietary-text">
                   <h5>Mediterranean Diet</h5>

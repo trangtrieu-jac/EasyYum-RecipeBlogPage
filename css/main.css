@@ -1,6 +1,6 @@
 body {
   font-family: "Mada", sans-serif;
-  background-color: #F3E8E8;
+  background-color: #FFFFFF;
   color: #333;
   margin: 0;
   padding: 0;
@@ -17,6 +17,10 @@ body a:hover {
   color: #C25757;
 }
 
+.navbar {
+  background-color: #F3E8E8;
+  font-size: large;
+}
 .navbar .navbar-brand img {
   height: 40px;
 }
@@ -27,11 +31,14 @@ body a:hover {
 .navbar .nav-link:hover {
   color: #C25757;
   text-decoration: underline;
+  font-weight: bold;
 }
 .navbar form {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 .navbar .form-control {
   height: 40px;
@@ -51,7 +58,7 @@ body a:hover {
   transition: background-color 0.3s;
 }
 .navbar button:hover {
-  background-color: #e2c6c6;
+  background-color: #e6e6e6;
 }
 
 footer {
@@ -175,6 +182,8 @@ footer .social-media .social-icons img:hover {
 .newsletter-box form .form-control {
   max-width: 300px;
   flex-grow: 1;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 .newsletter-box button {
   height: 35px;
@@ -190,7 +199,7 @@ footer .social-media .social-icons img:hover {
   transition: background-color 0.3s;
 }
 .newsletter-box button:hover {
-  background-color: #e2c6c6;
+  background-color: #e6e6e6;
 }
 
 .contact {
@@ -204,7 +213,7 @@ footer .social-media .social-icons img:hover {
   margin-bottom: 1rem;
 }
 .contact .contact-box {
-  background-color: #F3E8E8;
+  background-color: #FFFFFF;
   padding: 2rem;
   border-radius: 5px;
   margin-bottom: 4rem;
@@ -213,6 +222,7 @@ footer .social-media .social-icons img:hover {
   font-weight: bold;
 }
 .contact .contact-box .form-control {
+  border: 1px solid #000;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -231,7 +241,7 @@ footer .social-media .social-icons img:hover {
   margin: 0;
 }
 .contact .contact-box button:hover {
-  background-color: #e2c6c6;
+  background-color: #e6e6e6;
 }
 .contact .app {
   display: block;

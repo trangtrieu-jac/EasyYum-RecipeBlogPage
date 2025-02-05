@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Blogue de recettes délicieux</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Menu de navigation principal">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.fr.html">
+        <a class="navbar-brand" href="/Home.fr.html" aria-label="Page d'accueil">
           <img src="/image/logo-transparent-background.png" alt="Logo Easy Yum">
         </a>
         <button
@@ -50,26 +51,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.fr.html">Accueil</a>
+              <a class="nav-link" href="/Home.fr.html" aria-label="Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.fr.html">Recettes</a>
+              <a class="nav-link active" aria-current="page" href="/Recipes.fr.html" aria-label="Recettes">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.fr.html">Forum</a>
+              <a class="nav-link" href="/Forum.fr.html" aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.fr.html">Contact</a>
+              <a class="nav-link" href="/Contact.fr.html" aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipe.html">EN</a>
+              <a class="nav-link" href="/Recipes.html" aria-label="Page de recettes en anglais">EN</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Rechercher sur le site">
             <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher">
           </form>
-          <button type="submit">Se connecter</button>
-          <button type="submit">S'inscrire</button>
+          <button type="submit" aria-label="Se connecter">Se connecter</button>
+          <button type="submit" aria-label="S'inscrire">S&apos;inscrire</button>
         </div>
       </div>
     </nav>
@@ -83,49 +84,49 @@
         <!-- Breakfast -->
         <div class="container">
           <div class="row">
-            <div class="idea col-sm-2">
-              <a href="#dejeuner">
-                <img src="/image/breakfast.jpg" alt="Déjeuner">
+            <div class="idea col-sm-2" aria-labelledby="breakfast-title">
+              <a href="#dejeuner" aria-label="Voir les recettes de Déjeuner">
+                <img src="/image/breakfast.jpg" alt="Déjeuner" aria-label="Image de déjeuner">
                 <h4>Déjeuner</h4>
               </a>
             </div>
 
             <!-- Lunch -->
-            <div class="idea col-sm-2">
-              <a href="#diner">
-                <img src="/image/lunch.jpg" alt="Dîner">
+            <div class="idea col-sm-2" aria-labelledby="lunch-title">
+              <a href="#diner" aria-label="Voir les recettes de Dîner">
+                <img src="/image/lunch.jpg" alt="Dîner" aria-label="Image de dîner">
                 <h4>Dîner</h4>
               </a>
             </div>
 
             <!-- Dinner -->
-            <div class="idea col-sm-2">
-              <a href="#souper">
-                <img src="/image/dinner.jpg" alt="Souper">
+            <div class="idea col-sm-2" aria-labelledby="dinner-title">
+              <a href="#souper" aria-label="Voir les recettes de Souper">
+                <img src="/image/dinner.jpg" alt="Souper" aria-label="Image de souper">
                 <h4>Souper</h4>
               </a>
             </div>
 
             <!-- Dessert -->
-            <div class="idea col-sm-2">
-              <a href="#dessert">
-                <img src="/image/dessert.jpg" alt="Dessert">
+            <div class="idea col-sm-2" aria-labelledby="dessert-title">
+              <a href="#dessert" aria-label="Voir les recettes de Dessert">
+                <img src="/image/dessert.jpg" alt="Dessert" aria-label="Image de dessert">
                 <h4>Dessert</h4>
               </a>
             </div>
 
             <!-- Snacks -->
-            <div class="idea col-sm-2">
-              <a href="#collations">
-                <img src="/image/snack.jpg" alt="Collations">
+            <div class="idea col-sm-2" aria-labelledby="snacks-title">
+              <a href="#collations" aria-label="Voir les recettes de Collations">
+                <img src="/image/snack.jpg" alt="Collations" aria-label="Image de collations">
                 <h4>Collations</h4>
               </a>
             </div>
 
             <!-- Boisson -->
-            <div class="idea col-sm-2">
-              <a href="#/boisson">
-                <img src="/image/beverage.jpg" alt="Boisson">
+            <div class="idea col-sm-2" aria-labelledby="beverage-title">
+              <a href="#/boisson" aria-label="Voir les recettes de Boisson">
+                <img src="/image/beverage.jpg" alt="Boisson" aria-label="Image de boisson">
                 <h4>Boisson</h4>
               </a>
             </div>
@@ -137,10 +138,10 @@
       <div class="latest container">
         <div class="row">
           <!-- Latest Recipe -->
-          <div class="latest col-md-6">
+          <div class="latest col-md-6" aria-labelledby="latest-recipe-title">
             <h2>Dernière Recette</h2>
-            <a href="/Recipes/burger.html">
-              <img src="/image/latest.jpg" alt="Burger le Voleur" class="img-fluid">
+            <a href="/Recipes/burger.html" aria-label="Voir la recette du Burger le Voleur">
+              <img src="/image/latest.jpg" alt="Burger le Voleur" class="img-fluid" aria-label="Image du Burger le Voleur">
             </a>
             <div class="latest-info">
               <h3>Burger le "Voleur"</h3>
@@ -152,13 +153,13 @@
           </div>
 
           <!-- Dietary Preferences -->
-          <div class="dietary col-md-6">
+          <div class="dietary col-md-6" aria-labelledby="dietary-preferences-title">
             <h2>Préférences diététiques</h2>
             <div class="dietary-list">
               <!-- Veggie Life -->
-              <div class="dietary-category">
-                <a href="#veggielife">
-                  <img src="/image/veggie-life.jpg" alt="Vie Végétarienne" class="img-fluid">
+              <div class="dietary-category" aria-labelledby="veggie-life-title">
+                <a href="#veggielife" aria-label="Voir les recettes végétariennes">
+                  <img src="/image/veggie-life.jpg" alt="Vie Végétarienne" class="img-fluid" aria-label="Image de Vie Végétarienne">
                 </a>
                 <div class="dietary-text">
                   <h5>Vie Végétarienne</h5>
@@ -169,9 +170,9 @@
               </div>
 
               <!-- Keto -->
-              <div class="dietary-category">
-                <a href="#ketodiet">
-                  <img src="/image/keto.jpg" alt="Régime Keto" class="img-fluid">
+              <div class="dietary-category" aria-labelledby="keto-title">
+                <a href="#ketodiet" aria-label="Voir les recettes Keto">
+                  <img src="/image/keto.jpg" alt="Régime Keto" class="img-fluid" aria-label="Image du Régime Keto">
                 </a>
                 <div class="dietary-text">
                   <h5>Allons Keto !</h5>
@@ -182,9 +183,9 @@
               </div>
 
               <!-- Medi diet -->
-              <div class="dietary-category">
-                <a href="#ketodiet">
-                  <img src="/image/mediterranean.jpg" alt="Régime Méditerranéen" class="img-fluid">
+              <div class="dietary-category" aria-labelledby="medidiet-title">
+                <a href="#medidiet" aria-label="Voir les recettes Méditerranéennes">
+                  <img src="/image/mediterranean.jpg" alt="Régime Méditerranéen" class="img-fluid" aria-label="Image du Régime Méditerranéen">
                 </a>
                 <div class="dietary-text">
                   <h5>Régime Méditerranéen</h5>

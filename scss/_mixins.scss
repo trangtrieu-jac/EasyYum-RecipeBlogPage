@@ -23,3 +23,9 @@
     background-color: darken($background-color, 10%);
   }
 }
+
+@mixin borders {
+  border: $border;
+  border-radius: $border-radius;
+  $shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}

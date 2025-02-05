@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Blogue de recettes délicieux</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Menu de navigation principal">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.fr.html">
+        <a class="navbar-brand" href="/Home.fr.html" aria-label="Page d'accueil">
           <img src="/image/logo-transparent-background.png" alt="Logo Easy Yum">
         </a>
         <button
@@ -50,67 +51,67 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.fr.html">Accueil</a>
+              <a class="nav-link" href="/Home.fr.html" aria-label="Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.fr.html">Recettes</a>
+              <a class="nav-link" href="/Recipes.fr.html" aria-label="Recettes">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.fr.html">Forum</a>
+              <a class="nav-link" href="/Forum.fr.html" aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.fr.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/Contact.fr.html" aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.html">EN</a>
+              <a class="nav-link" href="/Contact.html" aria-label="Page de contact en anglais">EN</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Rechercher sur le site">
             <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher">
           </form>
-          <button type="submit">Se connecter</button>
-          <button type="submit">S&apos;inscrire</button>
+          <button type="submit" aria-label="Se connecter">Se connecter</button>
+          <button type="submit" aria-label="S'inscrire">S&apos;inscrire</button>
         </div>
       </div>
     </nav>
 
     <main>
       <!-- Contact Page -->
-      <div class="contact container">
+      <div class="contact container" aria-labelledby="contact-form">
         <div class="row">
           <!-- Contact Box -->
           <div class="col-md-5">
-            <div class="contact-box">
+            <div class="contact-box" role="form" aria-labelledby="contact-form-title">
               <h2>Contactez-nous</h2>
               <form action="#" method="post">
                 <div>
-                  <label for="first-name" class="form-label">Prénom</label>
-                  <input type="text" id="first-name" name="first-name" class="form-control" required>
+                  <label for="first-name" class="form-label" aria-label="Prénom">Prénom</label>
+                  <input type="text" id="first-name" name="first-name" class="form-control" aria-label="Entrez votre prénom" required>
                 </div>
 
                 <div>
-                  <label for="surname" class="form-label">Nom de famille</label>
-                  <input type="text" id="surname" name="surname" class="form-control" required>
+                  <label for="surname" class="form-label" aria-label="Nom de famille">Nom de famille</label>
+                  <input type="text" id="surname" name="surname" class="form-control" aria-label="Entrez votre nom de famille" required>
                 </div>
 
                 <div>
-                  <label for="email" class="form-label">Courriel</label>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="vous@email.com" required>
+                  <label for="email" class="form-label" aria-label="Courriel">Courriel</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="vous@email.com" aria-label="Entrez votre courriel" required>
                 </div>
 
                 <div>
-                  <label for="message" class="form-label">Message</label>
-                  <textarea id="message" name="message" class="form-control" placeholder="Votre message..." rows="4" required></textarea>
+                  <label for="message" class="form-label" aria-label="Message">Message</label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Votre message..." rows="4" aria-label="Entrez votre message" required></textarea>
                 </div>
 
-                <button type="submit">Soumettre</button>
+                <button type="submit" aria-label="Soumettre le formulaire">Soumettre</button>
               </form>
             </div>
           </div>
 
           <!-- App Image -->
-          <div class="app col-md-4">
-            <img src="/image/app.png" alt="Description de l'image" class="img-fluid">
+          <div class="app col-md-4" aria-label="Application mobile">
+            <img src="/image/app.png" alt="Description de l'image" class="img-fluid" aria-hidden="true">
           </div>
 
           <!-- App Info -->
@@ -120,10 +121,10 @@
               <h5>Elle est maintenant disponible sur l&apos;App Store et le Play Store. Vous pouvez la télécharger gratuitement !</h5>
 
               <div>
-                <a href="#app-store">
+                <a href="#app-store" aria-label="Télécharger sur l'App Store">
                   <img src="/image/app-store.png" height="100" width="200" alt="App Store" class="img-fluid">
                 </a>
-                <a href="#play-store">
+                <a href="#play-store" aria-label="Télécharger sur le Play Store">
                   <img src="/image/play-store.png" height="100" width="200" alt="Play Store" class="img-fluid">
                 </a>
               </div>
@@ -134,30 +135,30 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="footer" aria-label="Information du pied de page">
       <div class="footer container">
         <div class="row">
           <!-- Social Media -->
-          <div class="social-media col-md-6">
+          <div class="social-media col-md-6" aria-label="Suivez-nous sur les réseaux sociax">
             <img src="/image/logo-transparent-background.png" alt="Logo Easy Yum">
             <div class="social-icons">
-              <img src="/image/X.png" width="50" height="50" alt="Logo X">
-              <img src="/image/insta.png" width="50" height="50" alt="Logo Instagram">
-              <img src="/image/yt.png" width="50" height="50" alt="Logo YouTube">
-              <img src="/image/fb.png" width="50" height="50" alt="Logo Facebook">
+              <img src="/image/X.png" width="50" height="50" alt="Logo X" aria-label="Suivez-nous sur lX">
+              <img src="/image/insta.png" width="50" height="50" alt="Logo Instagram" aria-label="Suivez-nous sur Instagram">
+              <img src="/image/yt.png" width="50" height="50" alt="Logo YouTube" aria-label="Suivez-nous sur Youtube">
+              <img src="/image/fb.png" width="50" height="50" alt="Logo Facebook" aria-label="Suivez-nous sur Facebook">
             </div>
           </div>
           <!-- Footer 1 -->
-          <div class="footer1 col-md-3">
-            <p><a href="#news">Nouvelles</a></p>
-            <p><a href="#features">Fonctionnalités</a></p>
-            <p><a href="#advertise">Faire de la publicité</a></p>
+          <div class="footer1 col-md-3" aria-labelledby="footer links">
+            <p><a href="#news" aria-label="Nouvelles">Nouvelles</a></p>
+            <p><a href="#features" aria-label="Fonctionnalités">Fonctionnalités</a></p>
+            <p><a href="#advertise" aria-label="Publicités">Publicité</a></p>
           </div>
           <!-- Footer 2 -->
           <div class="footer2 col-md-3">
-            <p><a href="#privacy-policy">Politique de confidentialité</a></p>
-            <p><a href="#terms-of-service">Conditions d&apos;utilisation</a></p>
-            <p><a href="#careers">Carrières</a></p>
+            <p><a href="#privacy-policy" aria-label="Politique de confidentialité">Politique de confidentialité</a></p>
+            <p><a href="#terms-of-service" aria-label="Conditions d&apos;utilisation">Conditions d&apos;utilisation</a></p>
+            <p><a href="#careers" aria-label="Carrières">Carrières</a></p>
           </div>
         </div>
         <p>&copy; 2025 Trang Trieu. Tous droits réservés</p>

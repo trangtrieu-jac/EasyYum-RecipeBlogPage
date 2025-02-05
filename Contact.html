@@ -27,14 +27,15 @@
 
     <link rel="icon" href="/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/script.js" defer></script>
     <title>Easy Yum - Delicious Recipe Blog</title>
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar with aria  -->
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.html">
+        <a class="navbar-brand" href="/Home.html" aria-label="Home page">
           <img src="/image/logo-transparent-background.png" alt="Easy Yum Logo">
         </a>
         <button
@@ -50,67 +51,67 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.html">Home</a>
+              <a class="nav-link" href="/Home.html" aria-label="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.html">Recipes</a>
+              <a class="nav-link" href="/Recipes.html"aria-label="Recipes">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.html">Forum</a>
+              <a class="nav-link" href="/Forum.html"aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.html">Contact</a>
+              <a class="nav-link active"  aria-current="page" href="/Contact.html"aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.fr.html">FR</a>
+              <a class="nav-link" href="/Contact.fr.html" aria-label="Contact french version">FR</a>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" aria-label="Search form">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           </form>
-          <button type="submit">Log In</button>
-          <button type="submit">Register</button>
+          <button type="submit" aria-label="Log In">Log In</button>
+          <button type="submit" aria-label="Register">Register</button>
         </div>
       </div>
     </nav>
 
-    <main>
+    <main role="main">
       <!-- Contact Page -->
-      <div class="contact container">
+      <div class="contact container" aria-label="contact-form">
         <div class="row">
           <!-- Contact Box  -->
           <div class="col-md-5">
-            <div class="contact-box">
+            <div class="contact-box" role="form">
               <h2>Contact Us</h2>
-              <form action="#" method="post">
+              <form action="#" method="post" aria-labelledby="Contact Us Form">
                 <div>
-                  <label for="first-name" class="form-label">First Name</label>
-                  <input type="text" id="first-name" name="first-name" class="form-control" required>
+                  <label for="first-name" class="form-label" aria-label="First Name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" class="form-control" aria-label="Please enter your first name" required>
                 </div>
 
                 <div>
-                  <label for="surname" class="form-label">Surname</label>
-                  <input type="text" id="surname" name="surname" class="form-control" required>
+                  <label for="surname" class="form-label" aria-label="Last Name">Surname</label>
+                  <input type="text" id="surname" name="surname" class="form-control" aria-label="Please enter your last name" required>
                 </div>
 
                 <div>
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="you@email.com" required>
+                  <label for="email" class="form-label" aria-label="Email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="you@email.com" aria-label="Please enter your email" required>
                 </div>
 
                 <div>
-                  <label for="message" class="form-label">Message</label>
-                  <textarea id="message" name="message" class="form-control" placeholder="Your message..."  rows="4" required></textarea>
+                  <label for="message" class="form-label" aria-label="Message">Message</label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Your message..."  rows="4" aria-label="Please enter your message" required></textarea>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" aria-label="Summit message">Submit</button>
               </form>
             </div>
           </div>
 
           <!-- App Image -->
-          <div class="app col-md-4">
-            <img src="/image/app.png" alt="Image Description" class="img-fluid">
+          <div class="app col-md-4" aria-label="Mobile Application">
+            <img src="/image/app.png" alt="Image Description" class="img-fluid" aria-hidden="true">
           </div>
 
           <!-- App Info -->
@@ -120,10 +121,10 @@
               <h5>It is now available on the App Store and Play Store. You candownload for free!</h5>
 
               <div>
-                <a href="#app-store">
+                <a href="#app-store" aria-label="Download on App Store">
                   <img src="/image/app-store.png" height="100" width="200" alt="App Store" class="img-fluid">
                 </a>
-                <a href="#play-store">
+                <a href="#play-store" aria-label="Download on Play Store">
                   <img src="/image/play-store.png" height="100" width="200" alt="Play Store" class="img-fluid">
                 </a>
               </div>
@@ -134,30 +135,30 @@
     </main>
 
     <!-- Footer-->
-    <footer>
+    <footer role="footer" aria-label="Footer Info Section">
       <div class="footer container">
         <div class="row">
           <!-- Social Media -->
-          <div class="social-media col-md-6">
+          <div class="social-media col-md-6" aria-label="Follow us on social media">
             <img src="/image/logo-transparent-background.png" alt="Easy Yum Logo">
             <div class="social-icons">
-              <img src="/image/X.png" width="50" height="50" alt="X Logo">
-              <img src="/image/insta.png" width="50" height="50" alt="Instagram Logo">
-              <img src="/image/yt.png" width="50" height="50" alt="YouTube Logo">
-              <img src="/image/fb.png" width="50" height="50" alt="Facebook Logo">
+              <img src="/image/X.png" width="50" height="50" alt="X Logo" aria-label="Follow us on X">
+              <img src="/image/insta.png" width="50" height="50" alt="Instagram Logo" aria-label="Follow us on Instagram">
+              <img src="/image/yt.png" width="50" height="50" alt="YouTube Logo" aria-label="Follow us on Youtube">
+              <img src="/image/fb.png" width="50" height="50" alt="Facebook Logo" aria-label="Follow us on Facebook">
             </div>
           </div>
           <!-- Footer 1-->
-          <div class="footer1 col-md-3">
-            <p><a href="#news">News</a></p>
-            <p><a href="#features">Features</a></p>
-            <p><a href="#advertise">Advertise</a></p>
+          <div class="footer1 col-md-3" aria-label="Footer links">
+            <p><a href="#news" aria-label="News">News</a></p>
+            <p><a href="#features" aria-label="Features ">Features</a></p>
+            <p><a href="#advertise" aria-label="Advertise">Advertise</a></p>
           </div>
           <!-- Footer 2-->
           <div class="footer2 col-md-3">
-            <p><a href="#privacy-policy">Privacy Policy</a></p>
-            <p><a href="#terms-of-service">Terms of Service</a></p>
-            <p><a href="#careers">Careers</a></p>
+            <p><a href="#privacy-policy" aria-label="Privacy Policy">Privacy Policy</a></p>
+            <p><a href="#terms-of-service" aria-label="Terms of Service">Terms of Service</a></p>
+            <p><a href="#careers" aria-label="Careers">Careers</a></p>
           </div>
         </div>
         <p>&copy; 2025 Trang Trieu. All Copyright Reserved</p>
