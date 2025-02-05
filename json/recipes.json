@@ -1,0 +1,82 @@
+{
+  "recipes": [
+    {
+      "title": "Burger",
+      "ingredients": [
+        "1 lb ground beef",
+        "1/2 cup breadcrumbs",
+        "1 egg",
+        "1/4 cup chopped onion",
+        "Salt and pepper to taste",
+        "Burger buns",
+        "Lettuce, tomato, and cheese"
+      ],
+      "instructions": [
+        "Preheat your grill or pan to medium-high heat.",
+        "In a bowl, mix ground beef, breadcrumbs, egg, onion, salt, and pepper.",
+        "Form the mixture into burger patties.",
+        "Grill or cook patties for about 4-5 minutes on each side until cooked through.",
+        "Assemble the burgers on buns with lettuce, tomato, and cheese."
+      ]
+    },
+    {
+      "title": "Spaghetti Seafood",
+      "ingredients": [
+        "200g spaghetti",
+        "200g shrimp, peeled",
+        "200g mussels",
+        "2 tbsp olive oil",
+        "2 cloves garlic, minced",
+        "1/2 cup white wine",
+        "1/4 cup chopped parsley",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cook spaghetti according to package instructions.",
+        "Heat olive oil in a pan, sauté garlic for 1 minute.",
+        "Add shrimp and mussels, cook until shrimp turns pink.",
+        "Pour in white wine and cook until it reduces slightly.",
+        "Add the cooked spaghetti to the pan and toss with seafood.",
+        "Sprinkle with parsley, salt, and pepper, and serve."
+      ]
+    },
+    {
+      "title": "Avocado Toast",
+      "ingredients": [
+        "2 slices of whole grain bread",
+        "1 ripe avocado",
+        "1 tsp lemon juice",
+        "Salt and pepper to taste",
+        "Red pepper flakes (optional)"
+      ],
+      "instructions": [
+        "Toast the slices of bread until golden brown.",
+        "Mash the avocado in a bowl and add lemon juice, salt, and pepper.",
+        "Spread the avocado mixture on top of the toasted bread.",
+        "Sprinkle red pepper flakes if desired and serve."
+      ]
+    },
+    {
+      "title": "Chocolate Lava Cake",
+      "ingredients": [
+        "1/2 cup unsalted butter",
+        "6 oz semi-sweet chocolate",
+        "1 cup powdered sugar",
+        "2 eggs",
+        "2 egg yolks",
+        "1 tsp vanilla extract",
+        "1/2 cup all-purpose flour",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C). Grease and flour 4 ramekins.",
+        "Melt butter and chocolate together in a microwave or over a double boiler.",
+        "Whisk in powdered sugar, then add eggs, egg yolks, and vanilla.",
+        "Stir in flour and salt until smooth.",
+        "Pour the batter into ramekins, filling them halfway.",
+        "Bake for 12-14 minutes, until edges are set but centers are soft.",
+        "Let cool for 1 minute, then invert onto plates and serve warm."
+      ]
+    }
+  ]
+}

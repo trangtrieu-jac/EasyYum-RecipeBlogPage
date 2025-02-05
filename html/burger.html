@@ -28,7 +28,7 @@
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <title>Easy Yum - Delicious Recipe Blog</title>
-    <script src="/js/script.js" defer></script>
+    <script src="/script/case7-recipes-burger-feedback.js" defer></script>
   </head>
 
   <body>
@@ -76,9 +76,77 @@
     </nav>
 
     <main>
-      <div class="container" id="recipes-container 1">
-        <!-- Recipes will be loaded here -->
+      <!-- Title -->
+      <div class="hero-section">
+          <div class="hero-text">
+              <h1>Burger the "Burlar"</h1>
+          </div>
       </div>
+
+      <div class="burger container">
+        <div class="text-center">
+          <img src="/assets/images/latest.jpg" alt="Hamburger" class="img-fluid">
+        </div>
+
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>1 lb of ground beef</li>
+            <li>1/2 cup of breadcrumbs</li>
+            <li>1 egg</li>
+            <li>1/4 cup finely chopped onion</li>
+            <li>Salt and pepper to taste</li>
+            <li>Buns and your favorite toppings (lettuce, tomato, cheese, etc.)</li>
+          </ul>
+        </div>
+  
+
+        <div>
+        <h2>Instructions</h2>
+        <ol>
+          <li>In a large bowl, mix the ground beef, breadcrumbs, egg, onion, salt, and pepper.</li>
+          <li>Divide the mixture into 4 equal portions and shape them into patties.</li>
+          <li>Heat a grill or skillet over medium-high heat and cook the patties for 4 to 5 minutes on each side, until fully cooked.</li>
+          <li>Toast the buns for 1 to 2 minutes.</li>
+          <li>Assemble the burgers with your favorite toppings and serve.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="burger-video">
+      <video controls>
+        <source src="/assets/images/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+</main>
+
+
+      <div class="container">
+        <h2>Feedback Form</h2>
+
+        <form id="feedbackForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required="required">
+
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" required="required">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" placeholder="Enter your feedback here..." required="required"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div id="feedbackList"></div>
+    </div>
       
 
     <!-- Bootstrap's JS 5.3.3 -->
