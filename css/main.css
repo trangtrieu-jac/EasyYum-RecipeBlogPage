@@ -1,7 +1,7 @@
 body {
   font-family: "Mada", sans-serif;
   background-color: #FFFFFF;
-  color: #333;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -66,7 +66,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #EFBEBE;
-  color: #333;
+  color: #000;
   padding: 1rem 0;
 }
 footer .social-media img {
@@ -269,7 +269,7 @@ footer .social-media .social-icons img:hover {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  border: 2px solid #ccc;
+  border: 1px solid #000;
   border-radius: 5px;
 }
 .burger-video video {
@@ -283,4 +283,42 @@ footer .social-media .social-icons img:hover {
   .floating-video, .navbar, video {
     display: none;
   }
+}
+.container h1 {
+  text-align: center;
+}
+.container #recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.container .recipe {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+.container .recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.container .recipe h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0;
+}
+.container .recipe p {
+  font-size: 1rem;
+  color: #555;
+}
+.container .recipe span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

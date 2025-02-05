@@ -25,17 +25,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
 
-    <link rel="icon" href="/image/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <title>Easy Yum - Blog de Recettes Délicieuses</title>
+    <script src="/js/script.js" defer></script>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Menu de navigation principal">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Home.fr.html">
-          <img src="/image/logo-transparent-background.png" alt="Logo Easy Yum">
+        <a class="navbar-brand" href="/html/Home.fr.html" aria-label="Page d'accueil">
+          <img src="/assets/images/logo-transparent-background.png" alt="Logo Easy Yum">
         </a>
         <button
           class="navbar-toggler"
@@ -50,26 +51,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.fr.html">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="/html/Home.fr.html" aria-label="Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes.fr.html">Recettes</a>
+              <a class="nav-link" href="/html/Recipes.fr.html" aria-label="Recettes">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Forum.fr.html">Forum</a>
+              <a class="nav-link" href="/html/Forum.fr.html" aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Contact.fr.html">Contact</a>
+              <a class="nav-link" href="/html/Contact.fr.html" aria-label="Contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Recipes/burger.html">EN</a>
+              <a class="nav-link" href="/html/burger.html" aria-label="Page de burger en anglais">EN</a>
             </li>
           </ul>
-          <form role="search">
-            <input class="form-control" type="search" placeholder="Recherche" aria-label="Recherche">
+          <form role="search" aria-label="Rechercher sur le site">
+            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher">
           </form>
-          <button type="submit">Se connecter</button>
-          <button type="submit">S&apos;inscrire</button>
+          <button type="submit" aria-label="Se connecter">Se connecter</button>
+          <button type="submit" aria-label="S'inscrire">S&apos;inscrire</button>
         </div>
       </div>
     </nav>
@@ -84,7 +85,7 @@
 
       <div class="burger container">
         <div class="text-center">
-          <img src="/image/latest.jpg" alt="Hamburger" class="img-fluid">
+          <img src="/assets/images/latest.jpg" alt="Hamburger" class="img-fluid">
         </div>
 
         <div class="ingredients">
@@ -115,7 +116,7 @@
     <!-- Video -->
     <div class="burger-video">
       <video controls>
-        <source src="/image/video.mp4" type="video/mp4">
+        <source src="/assets/images/video.mp4" type="video/mp4">
           Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
     </div>
