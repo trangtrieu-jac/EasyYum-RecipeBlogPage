@@ -1,48 +1,63 @@
-// Contact
+/* Contact Section */
 .contact {
-  display: block;
-
-  .row {
-    align-items: center;
-
-    h2 {
-      text-align: center;
-      margin-bottom: $margin-base;
-    }
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 
   .contact-box {
-    background-color: $background-color;
+    background-color: #fff;
     padding: 2rem;
-    border-radius: $border-radius;
-    margin-bottom: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-    .form-label {
+    .fcontrol {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 1rem 0;
+      @include borders;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+    }
+
+    .flabel {
       font-weight: bold;
     }
-    .form-control {
-      @include borders;
-      margin-bottom: $margin-base;
-      
+
+    .error-message {
+      color: red;
+      font-size: 0.875rem;
     }
 
     button {
       @include buttons;
-      margin: 0;
+    }
+
+    .success-message {
+      margin-top: 1rem;
+      color: green;
+      font-weight: bold;
+      text-align: center;
     }
   }
 
-// App
-.app {
-  display: block;
-  text-align: center;
+  .app {
+    max-width: 100%;
+    margin-top: 5rem;
 
-  .app-info {
     img {
-      height: 70px;
-      width: 200px;
-    }
+      @include center-flex;
     }
   }
 }

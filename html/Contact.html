@@ -69,7 +69,7 @@
             </li>
           </ul>
           <form role="search" aria-label="Search form">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <input class="fcontrol" type="search" placeholder="Search" aria-label="Search">
           </form>
           <button type="submit" aria-label="Log In">Log In</button>
           <button type="submit" aria-label="Register">Register</button>
@@ -85,42 +85,49 @@
           <div class="col-md-5">
             <div class="contact-box" role="form">
               <h2>Contact Us</h2>
-              <form action="#" method="post" aria-labelledby="Contact Us Form">
+              <form id="contact-form" action="#" method="post" aria-labelledby="Contact Us Form">
                 <div>
-                  <label for="first-name" class="form-label" aria-label="First Name">First Name</label>
-                  <input type="text" id="first-name" name="first-name" class="form-control" aria-label="Please enter your first name" required>
+                  <label for="firstName" class="flabel" aria-label="First Name">First Name</label>
+                  <input type="text" id="firstName" name="firstName" class="fcontrol" aria-label="Please enter your first name" required>
+                  <span class="error-message" id="nameError"></span>
                 </div>
 
                 <div>
-                  <label for="surname" class="form-label" aria-label="Last Name">Surname</label>
-                  <input type="text" id="surname" name="surname" class="form-control" aria-label="Please enter your last name" required>
+                  <label for="surname" class="flabel" aria-label="Last Name">Surname</label>
+                  <input type="text" id="surname" name="surname" class="fcontrol" aria-label="Please enter your last name" required>
+                  <span class="error-message" id="surnameError"></span>
                 </div>
 
                 <div>
-                  <label for="email" class="form-label" aria-label="Email">Email</label>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="you@email.com" aria-label="Please enter your email" required>
+                  <label for="email" class="flabel" aria-label="Email">Email</label>
+                  <input type="email" id="email" name="email" class="fcontrol" placeholder="you@email.com" aria-label="Please enter your email" required>
+                  <span class="error-message" id="emailError"></span>
                 </div>
 
                 <div>
-                  <label for="message" class="form-label" aria-label="Message">Message</label>
-                  <textarea id="message" name="message" class="form-control" placeholder="Your message..."  rows="4" aria-label="Please enter your message" required></textarea>
+                  <label for="message" class="flabel" aria-label="Message">Message</label>
+                  <textarea id="message" name="message" class="fcontrol" placeholder="Your message..."  rows="4" aria-label="Please enter your message" required></textarea>
+                  <span class="error-message" id="messageError"></span>
                 </div>
 
-                <button type="submit" aria-label="Summit message">Submit</button>
+                <button type="submit" aria-label="Submit message">Submit</button>
               </form>
+
+              <!-- Success Message -->
+              <div id="successMessage" class="success-message" aria-live="polite"></div>
             </div>
           </div>
 
           <!-- App Image -->
           <div class="app col-md-4" aria-label="Mobile Application">
-            <img src="/assets/images/app.png" alt="Image Description" class="img-fluid" aria-hidden="true">
+            <img src="/assets/images/app.png" alt="Screenshot of Easy Yum mobile app" class="img-fluid" aria-hidden="true">
           </div>
 
           <!-- App Info -->
           <div class="app col-md-3">
             <div class="app">
               <h3>Get Our App</h3>
-              <h5>It is now available on the App Store and Play Store. You candownload for free!</h5>
+              <h5>It is now available on the App Store and Play Store. You can download for free!</h5>
 
               <div>
                 <a href="#app-store" aria-label="Download on App Store">

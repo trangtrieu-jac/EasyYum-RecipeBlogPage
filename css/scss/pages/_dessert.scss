@@ -1,6 +1,7 @@
 .container {
   h1 {
     text-align: center;
+    margin-top: 1rem;
   }
   
   #recipe-list {
@@ -12,10 +13,9 @@
 
   .recipe {
     background-color: white;
-    border: 1px solid #ddd;
+    @include borders;
     margin: 15px;
     padding: 20px;
-    border-radius: 8px;
     width: 250px;
     text-align: center;
   }
@@ -28,13 +28,11 @@
 
   .recipe h3 {
     font-size: 1.4rem;
-    color: #333;
     margin: 10px 0;
   }
 
   .recipe p {
     font-size: 1rem;
-    color: #555;
   }
 
   .recipe span {

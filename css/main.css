@@ -202,29 +202,44 @@ footer .social-media .social-icons img:hover {
   background-color: #e6e6e6;
 }
 
+/* Contact Section */
 .contact {
-  display: block;
-}
-.contact .row {
-  align-items: center;
-}
-.contact .row h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 .contact .contact-box {
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding: 2rem;
-  border-radius: 5px;
-  margin-bottom: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
 }
-.contact .contact-box .form-label {
-  font-weight: bold;
+.contact .contact-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.contact .contact-box .form-control {
+.contact .contact-box .fcontrol {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
   border: 1px solid #000;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.contact .contact-box .fcontrol:focus {
+  border-color: #C25757;
+  outline: none;
+}
+.contact .contact-box .flabel {
+  font-weight: bold;
+}
+.contact .contact-box .error-message {
+  color: red;
+  font-size: 0.875rem;
 }
 .contact .contact-box button {
   height: 35px;
@@ -238,18 +253,24 @@ footer .social-media .social-icons img:hover {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin: 0;
 }
 .contact .contact-box button:hover {
   background-color: #e6e6e6;
 }
-.contact .app {
-  display: block;
+.contact .contact-box .success-message {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
   text-align: center;
 }
-.contact .app .app-info img {
-  height: 70px;
-  width: 200px;
+.contact .app {
+  max-width: 100%;
+  margin-top: 5rem;
+}
+.contact .app img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section {
@@ -286,6 +307,7 @@ footer .social-media .social-icons img:hover {
 }
 .container h1 {
   text-align: center;
+  margin-top: 1rem;
 }
 .container #recipe-list {
   display: flex;
@@ -295,10 +317,10 @@ footer .social-media .social-icons img:hover {
 }
 .container .recipe {
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #000;
+  border-radius: 5px;
   margin: 15px;
   padding: 20px;
-  border-radius: 8px;
   width: 250px;
   text-align: center;
 }
@@ -309,12 +331,10 @@ footer .social-media .social-icons img:hover {
 }
 .container .recipe h3 {
   font-size: 1.4rem;
-  color: #333;
   margin: 10px 0;
 }
 .container .recipe p {
   font-size: 1rem;
-  color: #555;
 }
 .container .recipe span {
   display: block;
