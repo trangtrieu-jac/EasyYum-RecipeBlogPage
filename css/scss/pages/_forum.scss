@@ -9,7 +9,8 @@
   }
 }
 
-.newsletter-box {
+
+.funny-quote {
   text-align: center;
   padding-top: $padding-base;
   margin-top: 3rem;
@@ -20,14 +21,22 @@
     @include center-flex;
     gap: 10px;
     margin-bottom: $margin-base;
-
-    .form-control {
-      max-width: 300px;
-      flex-grow: 1;
-      @include borders;
-    }
   }
-  button {
-    @include buttons;
+
+  input {
+    height: 35px;
+    background-color: $primary-color;
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0 $margin-base;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: darken($background-color, 90%);
+    }
   }
 }

@@ -32,7 +32,7 @@ function getData(dataSource, divID) {
         let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]; 
         
         // insert the randomly selected quote into the target div
-        obj.innerHTML = `<p>${randomQuote}</p>`;
+        obj.innerHTML = `<h5>${randomQuote}</h5>`;
       }
     };
 

@@ -28,6 +28,7 @@
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <title>Easy Yum - Delicious Recipe Blog</title>
+    <script src="/script/case2-recipe-modalpopup.js" defer></script>
   </head>
 
   <body>
@@ -200,6 +201,30 @@
         </div>
       </div>
     </main>
+
+    <!-- Modal Popup-->
+    <div id="popupModal" class="modal-overlay">
+      <div class="modal-box">
+          <span class="close-button" id="closeModalBtn">&times;</span>
+          <div class="modal-content">
+              <h3>Stay Updated</h3>
+              <p>Subscribe to our newsletter for the latest trends!</p>
+              <form action="#" method="post" aria-label="Subscribe to newsletter">
+                  <input
+                      type="email"
+                      placeholder="you@example.com"
+                      required="required"
+                      class="email-input"
+                      aria-label="Enter your email"
+                  />
+                  <button type="submit" class="submit-btn" aria-label="Submit newsletter subscription">
+                      Subscribe Now
+                  </button>
+              </form>
+          </div>
+      </div>
+  </div>
+
     <!-- Bootstrap's JS 5.3.3 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

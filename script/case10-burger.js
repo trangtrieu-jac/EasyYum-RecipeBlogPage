@@ -2,7 +2,7 @@ const ctx = document.getElementById('nutrientChart').getContext('2d');
   const nutrientData = {
     labels: ['Protein', 'Fat', 'Carbohydrates'],
     datasets: [{
-      label: 'Burger Nutritional Facts (Per Serving)',
+      label: 'Gram per serving',
       data: [30, 25, 40],  // Example nutritional data (Calories, Protein, Fat, Carbohydrates)
       backgroundColor: [
         'rgb(255, 99, 132)',  // Calories (Red)
