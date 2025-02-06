@@ -28,7 +28,7 @@
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <title>Easy Yum - Blogue de recettes délicieux</title>
-    <script src="/script/case5-contact-contactbox.js" defer></script>
+    <script src="/script/case9-forum-quote.js" defer></script>
   </head>
 
   <body>
@@ -57,7 +57,7 @@
               <a class="nav-link" href="/html/Recipes.fr.html" aria-label="Recettes">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/Forum.fr.html" aria-label="Forum">Forum</a>
+              <a class="nav-link active" aria-current="page" href="/html/Forum.fr.html" aria-label="Forum">Forum</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/html/Contact.fr.html" aria-label="Contact">Contact</a>
@@ -93,14 +93,15 @@
           <div class="col-md-4">
             <img src="/assets/images/review.png" class="img-fluid" alt="Critique 3" aria-label="Image de critique 3">
           </div>
-          <div class="col-md-4">
-            <img src="/assets/images/review.png" class="img-fluid" alt="Critique 4" aria-label="Image de critique 4">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/images/review.png" class="img-fluid" alt="Critique 5" aria-label="Image de critique 5">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/images/review.png" class="img-fluid" alt="Critique 6" aria-label="Image de critique 6">
+          <div class="container funny-quote">
+            <h2>Citronnades de cuisine drôles</h2>
+            <form>
+              <!-- Bouton pour récupérer les citations à partir de data.txt -->
+              <input type="button" value="Récupérer une citation drôle" onclick="getData('/assets/data/case9-chefQuote-fr.txt', 'quoteDiv');">
+            </form>
+            <div id="quoteDiv">
+              <p>Cliquez sur le bouton pour récupérer une citation drôle de cuisine!</p>
+            </div>
           </div>
         </div>
       </div>
